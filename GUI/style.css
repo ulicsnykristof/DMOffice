@@ -1,0 +1,173 @@
+/************************ *** LOGIN *** ***********************************************************/
+
+#bt_login{
+	-fx-background-color: linear-gradient(#444, #222);
+	-fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#bt_login:hover{
+	-fx-background-color: linear-gradient(#555, #999);
+	-fx-cursor: hand;
+}
+
+#login_close{
+    -fx-cursor: hand;
+}
+
+#t_login, #t_pwd{
+	-fx-padding: 5;
+	-fx-font-size: 15;
+}
+
+#l_login{
+	-fx-font-weight: bold;
+}
+
+#cb_user, #cb_admin{
+	-fx-font-size: 14;
+}
+
+/************************ *** GLOBAL *** *******************************************************/
+
+.admin_menu:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.top_right{
+    -fx-cursor: hand;
+}
+
+/************************ *** ADMIN MAIN *** *******************************************************/
+
+.admin_main_button_label{
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.admin_main_button{
+    -fx-background-color: #CCC;
+}
+
+.admin_main_button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #777;
+}
+
+
+/************************ *** ADMIN REGUSER *** *******************************************************/
+
+#admin_reguser_regbutton{
+    -fx-background-color: linear-gradient(#444, #222);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+#admin_reguser_regbutton:hover{
+    -fx-background-color: linear-gradient(#555, #999);
+    -fx-cursor: hand;
+}
+
+#admin_reguser_clearbutton{
+    -fx-background-color: linear-gradient(#444, #222);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+#admin_reguser_clearbutton:hover{
+    -fx-background-color: linear-gradient(#555, #999);
+    -fx-cursor: hand;
+}
+
+
+/************************ *** ADMIN MODUSER *** *******************************************************/
+
+.admin_moduser_change:hover{
+    -fx-cursor: hand;
+}
+
+#admin_moduser_select, #admin_moduser_delete, #admin_moduser_confirm{
+    -fx-background-color: linear-gradient(#444, #222);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+#admin_moduser_select:hover, #admin_moduser_delete:hover, #admin_moduser_confirm:hover{
+    -fx-background-color: linear-gradient(#555, #999);
+    -fx-cursor: hand;
+}
+
+
+
+/************************ *** USER MAIN *** *******************************************************/
+
+.user_main_button_label{
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.user_main_button{
+    -fx-background-color: #CCC;
+}
+
+.user_main_button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #777;
+}
+
+
+/************************ *** USER PRODUCTS *** *******************************************************/
+
+.user_products_button{
+-fx-background-color: linear-gradient(#444, #222);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+
+.user_products_button:hover{
+-fx-background-color: linear-gradient(#555, #999);
+    -fx-cursor: hand;
+}
+
+#user_product_list{
+-fx-selection-bar:grey;
+-fx-border-color:grey;
+}
+
+
+
+/************************ *** USER ORDER *** *******************************************************/
+
+.user_order_button{
+-fx-background-color: linear-gradient(#444, #222);
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+
+.user_order_button:hover{
+-fx-background-color: linear-gradient(#555, #999);
+    -fx-cursor: hand;
+}
+
+#user_order_plist, #user_order_olist{
+-fx-selection-bar:grey;
+-fx-border-color:grey;
+}
+
+/************************ *** USER ORDER PREVIEW *** *******************************************************/
+
+#user_order_pre_close:hover{
+-fx-cursor: hand;
+}
+
+
+

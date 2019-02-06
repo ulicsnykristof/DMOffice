@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXControl.admin_manageuser_control">
+   <children>
+      <AnchorPane fx:id="admin_main_menu" layoutX="1.0" layoutY="1.0" prefHeight="598.0" prefWidth="248.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="20.0" prefHeight="70.0" prefWidth="200.0" text="DM Office">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <Separator layoutX="25.0" layoutY="100.0" prefWidth="200.0" />
+            <Label fx:id="menu_name" layoutX="25.0" layoutY="125.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_options" layoutX="25.0" layoutY="155.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Options">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_logout" layoutX="25.0" layoutY="185.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Separator layoutX="25.0" layoutY="235.0" prefWidth="200.0" />
+            <Label fx:id="menu_help" layoutX="25.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Help">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_tac" layoutX="25.0" layoutY="290.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Terms and Conditions">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_version" layoutX="25.0" layoutY="320.0" prefHeight="30.0" prefWidth="200.0" text="Version: Early access 1.0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="admin_moduser_close" fitHeight="16.0" fitWidth="16.0" layoutX="1124.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/close.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="30.0" prefHeight="50.0" prefWidth="320.0" text="Manage users">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="150.0" prefHeight="30.0" prefWidth="150.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="200.0" prefHeight="30.0" prefWidth="150.0" text="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="250.0" prefHeight="30.0" prefWidth="150.0" text="First name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="300.0" prefHeight="30.0" prefWidth="150.0" text="Last name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="350.0" prefHeight="30.0" prefWidth="150.0" text="Position">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="400.0" prefHeight="30.0" prefWidth="150.0" text="Access">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="admin_moduser_back" fitHeight="20.0" fitWidth="20.0" layoutX="1056.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/back2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin_reguser_underline" fitHeight="20.0" fitWidth="20.0" layoutX="1088.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/line.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="admin_moduser_list" layoutX="870.0" layoutY="150.0" prefHeight="260.0" prefWidth="219.0" />
+      <Button fx:id="admin_moduser_select" layoutX="870.0" layoutY="431.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="101.0" text="Select" />
+      <Label fx:id="admin_moduser_uid_label" layoutX="460.0" layoutY="150.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_email_label" layoutX="460.0" layoutY="200.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_firstname_label" layoutX="460.0" layoutY="250.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_lastname_label" layoutX="460.0" layoutY="300.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_position_label" layoutX="460.0" layoutY="350.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_access_label" layoutX="460.0" layoutY="400.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="admin_moduser_delete" layoutX="988.0" layoutY="431.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="101.0" text="Delete" />
+      <Button fx:id="admin_moduser_confirm" layoutX="870.0" layoutY="492.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="101.0" text="Confirm" />
+      <Label layoutX="310.0" layoutY="450.0" prefHeight="30.0" prefWidth="150.0" text="Register date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="500.0" prefHeight="30.0" prefWidth="150.0" text="Registered by">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_regdate_label" layoutX="460.0" layoutY="450.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_moduser_regby_label" layoutX="460.0" layoutY="500.0" prefHeight="30.0" prefWidth="350.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="admin_moduser_uid_img" fitHeight="30.0" fitWidth="20.0" layoutX="425.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" styleClass="admin_moduser_change">
+         <image>
+            <Image url="@../Pictures/change.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin_moduser_email_img" fitHeight="20.0" fitWidth="20.0" layoutX="425.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" styleClass="admin_moduser_change">
+         <image>
+            <Image url="@../Pictures/change.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin_moduser_firstname_img" fitHeight="30.0" fitWidth="20.0" layoutX="425.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" styleClass="admin_moduser_change">
+         <image>
+            <Image url="@../Pictures/change.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin_moduser_lastname_img" fitHeight="20.0" fitWidth="20.0" layoutX="425.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" styleClass="admin_moduser_change">
+         <image>
+            <Image url="@../Pictures/change.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin_moduser_position_img" fitHeight="30.0" fitWidth="20.0" layoutX="425.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true" styleClass="admin_moduser_change">
+         <image>
+            <Image url="@../Pictures/change.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="admin_moduser_uid_text" layoutX="460.0" layoutY="150.0" prefHeight="30.0" prefWidth="280.0" />
+      <TextField fx:id="admin_moduser_email_text" layoutX="460.0" layoutY="200.0" prefHeight="30.0" prefWidth="280.0" />
+      <TextField fx:id="admin_moduser_firstname_text" layoutX="460.0" layoutY="250.0" prefHeight="30.0" prefWidth="280.0" />
+      <TextField fx:id="admin_moduser_lastname_text" layoutX="460.0" layoutY="300.0" prefHeight="30.0" prefWidth="280.0" />
+      <TextField fx:id="admin_moduser_position_text" layoutX="460.0" layoutY="350.0" prefHeight="30.0" prefWidth="280.0" />
+   </children>
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" />
+   </effect>
+</AnchorPane>

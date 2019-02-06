@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXControl.user_products_control">
+   <children>
+      <AnchorPane fx:id="admin_main_menu" layoutX="1.0" layoutY="1.0" prefHeight="598.0" prefWidth="248.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="20.0" prefHeight="70.0" prefWidth="200.0" text="DM Office">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <Separator layoutX="25.0" layoutY="100.0" prefWidth="200.0" />
+            <Label fx:id="menu_name" layoutX="25.0" layoutY="125.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_options" layoutX="25.0" layoutY="155.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Options">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_logout" layoutX="25.0" layoutY="185.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Separator layoutX="25.0" layoutY="235.0" prefWidth="200.0" />
+            <Label fx:id="menu_help" layoutX="25.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Help">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_tac" layoutX="25.0" layoutY="290.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Terms and Conditions">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_version" layoutX="25.0" layoutY="320.0" prefHeight="30.0" prefWidth="200.0" text="Version: Early access 1.0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="user_products_close" fitHeight="16.0" fitWidth="16.0" layoutX="1124.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="user_product_underline" fitHeight="20.0" fitWidth="20.0" layoutX="1088.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/line.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="user_product_list" layoutX="300.0" layoutY="110.0" prefHeight="455.0" prefWidth="200.0" />
+      <Button fx:id="user_product_export" layoutX="530.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="user_products_button" text="Export" />
+      <Button fx:id="user_product_import" layoutX="530.0" layoutY="290.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="user_products_button" text="Import" />
+      <Label layoutX="280.0" layoutY="30.0" prefHeight="50.0" prefWidth="320.0" text="Products">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="110.0" prefHeight="30.0" prefWidth="140.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="150.0" prefHeight="30.0" prefWidth="140.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="190.0" prefHeight="30.0" prefWidth="140.0" text="Type">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="user_products_back" fitHeight="20.0" fitWidth="20.0" layoutX="1055.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/back2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="user_product_remove" layoutX="530.0" layoutY="230.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="user_products_button" text="Remove" />
+      <Button fx:id="user_product_add" layoutX="530.0" layoutY="170.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="user_products_button" text="Add" />
+      <Button fx:id="user_product_select" layoutX="530.0" layoutY="110.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="user_products_button" text="Select" />
+      <Label layoutX="700.0" layoutY="270.0" prefHeight="30.0" prefWidth="140.0" text="Manufacturer">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="230.0" prefHeight="30.0" prefWidth="140.0" text="Category">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="310.0" prefHeight="30.0" prefWidth="140.0" text="Distributor">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="350.0" prefHeight="30.0" prefWidth="140.0" text="Country">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="390.0" prefHeight="30.0" prefWidth="140.0" text="Container">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="430.0" prefHeight="30.0" prefWidth="140.0" text="Volumen">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="470.0" prefHeight="30.0" prefWidth="140.0" text="Alcohol">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_id_label" layoutX="840.0" layoutY="110.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_name_label" layoutX="840.0" layoutY="150.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_type_label" layoutX="840.0" layoutY="190.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_category_label" layoutX="840.0" layoutY="230.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_producer_label" layoutX="840.0" layoutY="270.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_distributor_label" layoutX="840.0" layoutY="310.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_country_label" layoutX="840.0" layoutY="350.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_container_label" layoutX="840.0" layoutY="390.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_volume_label" layoutX="840.0" layoutY="430.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_alcohol_label" layoutX="840.0" layoutY="470.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="700.0" layoutY="510.0" prefHeight="30.0" prefWidth="140.0" text="Returnable">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="user_product_returnable_label" layoutX="840.0" layoutY="510.0" prefHeight="30.0" prefWidth="270.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" />
+   </effect>
+</AnchorPane>

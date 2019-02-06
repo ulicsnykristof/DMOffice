@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXControl.admin_reguser_control">
+   <children>
+      <AnchorPane fx:id="admin_main_menu" layoutX="1.0" layoutY="1.0" prefHeight="598.0" prefWidth="248.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="20.0" prefHeight="70.0" prefWidth="200.0" text="DM Office">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <Separator layoutX="25.0" layoutY="100.0" prefWidth="200.0" />
+            <Label fx:id="menu_name" layoutX="25.0" layoutY="125.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_options" layoutX="25.0" layoutY="155.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Options">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_logout" layoutX="25.0" layoutY="185.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Separator layoutX="25.0" layoutY="235.0" prefWidth="200.0" />
+            <Label fx:id="menu_help" layoutX="25.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Help">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_tac" layoutX="25.0" layoutY="290.0" prefHeight="30.0" prefWidth="200.0" styleClass="admin_menu" text="Terms and Conditions">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="menu_version" layoutX="25.0" layoutY="320.0" prefHeight="30.0" prefWidth="200.0" text="Version: Early access 1.0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="admin_reguser_close" fitHeight="16.0" fitWidth="16.0" layoutX="1124.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/close.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="30.0" prefHeight="50.0" prefWidth="320.0" text="Register new user">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="150.0" prefHeight="30.0" prefWidth="200.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="200.0" prefHeight="30.0" prefWidth="200.0" text="E-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="250.0" prefHeight="30.0" prefWidth="200.0" text="First name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="300.0" prefHeight="30.0" prefWidth="200.0" text="Last name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="350.0" prefHeight="30.0" prefWidth="200.0" text="Position">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="admin_reguser_access" layoutX="500.0" layoutY="400.0" prefHeight="30.0" prefWidth="150.0" />
+      <Label layoutX="310.0" layoutY="400.0" prefHeight="30.0" prefWidth="200.0" text="Access">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="admin_reguser_uid" layoutX="500.0" layoutY="150.0" prefHeight="30.0" prefWidth="534.0" />
+      <TextField fx:id="admin_reguser_email" layoutX="500.0" layoutY="200.0" prefHeight="30.0" prefWidth="534.0" />
+      <TextField fx:id="admin_reguser_firstname" layoutX="500.0" layoutY="250.0" prefHeight="30.0" prefWidth="534.0" />
+      <TextField fx:id="admin_reguser_lastname" layoutX="500.0" layoutY="300.0" prefHeight="30.0" prefWidth="534.0" />
+      <TextField fx:id="admin_reguser_position" layoutX="500.0" layoutY="350.0" prefHeight="30.0" prefWidth="534.0" />
+      <Button fx:id="admin_reguser_regbutton" layoutX="500.0" layoutY="461.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="OK" />
+      <ImageView fx:id="admin_reguser_back" fitHeight="20.0" fitWidth="20.0" layoutX="1056.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/back2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin_reguser_clearbutton" layoutX="633.0" layoutY="461.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Clear" />
+      <ImageView fx:id="admin_reguser_underline" fitHeight="20.0" fitWidth="20.0" layoutX="1088.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="top_right">
+         <image>
+            <Image url="@../Pictures/line.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" />
+   </effect>
+</AnchorPane>

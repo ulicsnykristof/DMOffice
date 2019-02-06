@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXControl.login_control">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="1.0" layoutY="1.0" prefHeight="398.0" prefWidth="258.0" spacing="30.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label text="Welcome">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="221.0" text="This application is featured by Gomba co." />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Our corporation will guide you to a new reality. It is innovative, brave and inspirationing. Let us, to show you the real World." textAlignment="CENTER" wrappingWidth="212.13671875" />
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="bt_login" layoutX="296.0" layoutY="278.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="103.0" text="Login" />
+      <TextField fx:id="t_login" layoutX="290.0" layoutY="130.0" prefHeight="40.0" prefWidth="280.0" promptText="Login name" />
+      <PasswordField fx:id="t_pwd" layoutX="290.0" layoutY="190.0" prefHeight="40.0" prefWidth="280.0" promptText="Password" />
+      <CheckBox fx:id="cb_user" layoutX="423.0" layoutY="278.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="55.0" text="User" />
+      <CheckBox fx:id="cb_admin" layoutX="494.0" layoutY="278.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="68.0" text="Admin" />
+      <Label fx:id="l_login" layoutX="296.0" layoutY="80.0" prefHeight="40.0" prefWidth="200.0" text="DM Office v1.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="280.0" layoutY="242.0" prefHeight="29.0" prefWidth="300.0" />
+      <Label fx:id="login_version" layoutX="451.0" layoutY="378.0" text="Version: 1.0.0 (2018.11.04.)" />
+      <ImageView fx:id="login_close" fitHeight="16.0" fitWidth="16.0" layoutX="574.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/close.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow blurType="TWO_PASS_BOX" />
+   </effect>
+</AnchorPane>
