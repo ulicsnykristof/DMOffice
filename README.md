@@ -35,8 +35,16 @@ Technológia:
   - MySQL (CE 8.0.13)
 
 JAR állományok:
-  - mysql-connector-java-5.1.47.jar
-  - poi-4.0.1.jar
-
+  - mysql-connector-java-5.1.47.jar 
+  - poi-4.0.1.jar 
+  
 ## Telepítés
+
+- A letöltött projektet nyissuk meg egy IDE-ben, majd adjuk hozzá a JAR fájlokat ( DMOffice/Others/ ).
+- Hozzunk létre egy MySQL adatbázist az alábbi utasításokkal ( DMOffice/Others/sql.txt )
+- Írjuk át a config file-ban az adatbázis elérési útvonalát az általunk létrehozottéra ( DMOffice/Others/config.txt )
+- Futtassuk a programot
+- Belépeés admin felületre, felhasználónév: Admin jelszó: admin
+- Belépés user ferületre, felhasználónév: bela jelszó: user
+
 
