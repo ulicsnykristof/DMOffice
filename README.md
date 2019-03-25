@@ -40,9 +40,9 @@ JAR állományok:
   
 ## Telepítés
 
-- A letöltött projektet nyissuk meg egy IDE-ben, majd adjuk hozzá a JAR fájlokat ( DMOffice/Others/ ).
-- Hozzunk létre egy MySQL adatbázist az alábbi utasításokkal ( DMOffice/Others/sql.txt )
-- Írjuk át a config file-ban az adatbázis elérési útvonalát az általunk létrehozottéra ( DMOffice/Others/config.txt )
+- A letöltött projektet nyissuk meg egy IDE-ben, majd adjuk hozzá a JAR fájlokat ( DMOffice/Other/ ).
+- Hozzunk létre egy MySQL adatbázist az alábbi utasításokkal ( DMOffice/Other/sql.txt )
+- Írjuk át a config file-ban az adatbázis elérési útvonalát az általunk létrehozottéra ( DMOffice/Other/config.txt )
 - Futtassuk a programot
 - Belépeés admin felületre, felhasználónév: Admin jelszó: admin
 - Belépés user ferületre, felhasználónév: bela jelszó: user
