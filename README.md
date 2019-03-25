@@ -24,22 +24,16 @@ A program külön felületet biztosít a felhasználók és az adminok számára
     
 Jelenleg megvalósított funkciók + jellel vannak jelölve.
 
+### Technikai részletek
 
-  A program tervezése során célom volt a réteges felépítés kialakítása a következő formában: Adatbázis réteg <-> Adatbázis kapcsolati réteg <-> Logikai réteg <-> Felhasználói réteg.
+A program tervezése során célom volt a réteges felépítés kialakítása a következő formában: Adatbázis réteg <-> Adatbázis kapcsolati réteg <-> Logikai réteg <-> Felhasználói réteg.
 
 Technológia:
-  -Java (JDK 8u191)
-  -JavaFX
-  -CSS
-  -MySQL
+  - Java (JDK 8u191)
+  - JavaFX
+  - CSS
+  - MySQL
 
 JAR állományok:
   - mysql-connector-java-5.1.47.jar
   - poi-4.0.1.jar
-
-
-
-Használati útmutató
-  
-  A projktet le kell tölteni, majd hozzáadni a két JAR file-t ... . 
-  
