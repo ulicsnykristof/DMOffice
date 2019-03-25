@@ -1,8 +1,12 @@
 # DMOffice
 
-A programot egy egyetemi projekt keretében készítem. Célom a Java nyelv és az azzal kapcsolatos technológiák megismerése, gyakorlása. Jelenlegi formájában valós környezetben még nem használható, de prototípusként bemutatható, ami által a felhasználók már a fejlesztés korai szakaszában képet kaphatnak a szoftverről, tesztelhetik azt, illetve élhetnek módosítási javaslatokkal. A program olyan kis- és középvállalkozások számára lehet hasznos, ahol a dolgozók számára nehézséget jelethet egy bonyolultabb vállalati információs rendszer használata. Ennél fogva a felhasználói felületet úgy lett kialakítva hogy átlátható és könnyen kezelhető legyen. Továbbá az egyes funkciók egymástól elkülőnítve, kereszthivátkozások nélkül érhetők el. A program külön felületet biztosít a felhasználók és az adminok számára. Ezenkívül a felhasználókra további hozzáférési korlátozások vonatkoznak, munkakörüknek megfelelően, mindenki kizárólag a számára releváns funkciókhoz tud hozzáférni.
+A programot egy egyetemi projekt keretében készítem. Célom a Java nyelv és az azzal kapcsolatos technológiák megismerése, gyakorlása. Jelenlegi formájában valós környezetben még nem használható, de prototípusként bemutatható, ami által a felhasználók már a fejlesztés korai szakaszában képet kaphatnak a szoftverről, tesztelhetik azt, illetve élhetnek módosítási javaslatokkal. 
+
+A program olyan kis- és középvállalkozások számára lehet hasznos, ahol a dolgozók számára nehézséget jelethet egy bonyolultabb vállalati információs rendszer használata. Ennél fogva a felhasználói felületet úgy lett kialakítva hogy átlátható és könnyen kezelhető legyen. Továbbá az egyes funkciók egymástól elkülőnítve, kereszthivátkozások nélkül érhetők el. 
+
+A program külön felületet biztosít a felhasználók és az adminok számára. Ezenkívül a felhasználókra további hozzáférési korlátozások vonatkoznak, munkakörüknek megfelelően, mindenki kizárólag a számára releváns funkciókhoz tud hozzáférni.
   
-  #####Funkciók:
+  ##### Funkciók:
   - Admin:
     - Userek kezelése +
     - Userek tevékenysége
