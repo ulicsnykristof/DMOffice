@@ -32,8 +32,11 @@ Technológia:
   - Java (JDK 8u191)
   - JavaFX
   - CSS
-  - MySQL
+  - MySQL (CE 8.0.13)
 
 JAR állományok:
   - mysql-connector-java-5.1.47.jar
   - poi-4.0.1.jar
+
+## Telepítés
+
