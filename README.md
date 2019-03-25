@@ -6,7 +6,7 @@ A program olyan kis- és középvállalkozások számára lehet hasznos, ahol a 
 
 A program külön felületet biztosít a felhasználók és az adminok számára. Ezenkívül a felhasználókra további hozzáférési korlátozások vonatkoznak, munkakörüknek megfelelően, mindenki kizárólag a számára releváns funkciókhoz tud hozzáférni.
   
-  ##### Funkciók:
+  ### Funkciók:
   - Admin:
     - Userek kezelése +
     - Userek tevékenysége
