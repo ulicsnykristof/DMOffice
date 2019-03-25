@@ -46,5 +46,6 @@ JAR állományok:
 - Futtassuk a programot
 - Belépeés admin felületre, felhasználónév: Admin jelszó: admin
 - Belépés user ferületre, felhasználónév: bela jelszó: user
+- User felületen, a Products funkióban, az Import gombra kattintva tölthető fel termékekkel az adatbázis
 
 
