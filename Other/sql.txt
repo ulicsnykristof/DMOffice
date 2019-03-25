@@ -1,0 +1,69 @@
+create database dmoffice;
+
+use dmoffice;
+
+create TABLE users (
+    user_id int(5) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    user_uid varchar(255) NOT NULL,
+    user_pwd varchar(255) NOT NULL,
+    user_email varchar(255) NOT NULL,
+    user_firstname varchar(255) NOT NULL,
+    user_lastname varchar(255) NOT NULL,
+    user_position varchar(255) NOT NULL,
+    user_access varchar(255) NOT NULL,
+    user_registered date NOT NULL,
+    user_admin_registered varchar(255) NOT NULL
+);
+
+CREATE TABLE product (
+    p_id int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    p_name varchar(255) NOT NULL,
+    p_type varchar(255),
+    p_category varchar(255),
+    p_producer varchar(255) NOT NULL,
+    p_distributor varchar(255) NOT NULL,
+    p_purchase_price int(11) NOT NULL,
+    p_country varchar(255),
+    p_container varchar(255),
+    p_volume int(11) NOT NULL,
+    p_alcohol double,
+    p_returnable boolean NOT NULL
+);
+
+CREATE TABLE orders(
+o_id int(11) AUTO_INCREMENT PRIMARY KEY not null,
+o_order_date date not null,
+o_status varchar(255) not null,
+o_partner varchar(255) not null,
+o_price int(11) not null
+);
+
+
+
+CREATE TABLE orders_h (
+num int(11) AUTO_INCREMENT not null,
+p_id int(11) not null,
+o_id int(11) not null,
+PRIMARY KEY (num),
+FOREIGN KEY (p_id) REFERENCES product(p_id),
+FOREIGN KEY (o_id) REFERENCES orders(o_id)
+);
+
+
+CREATE TABLE stock (
+stock_number varchar(8) not null PRIMARY KEY,
+p_id int(11) not null,
+FOREIGN KEY (p_id) REFERENCES product (p_id),
+stock_quantity int(11),
+stock_last_update date
+);
+
+
+insert into users (user_uid, user_pwd, user_email, user_firstname, user_lastname, 
+user_position, user_access, user_registered, user_admin_registered) 
+values ('admin', 'admin', 'admin@gmail.com', 'Dózsa', 'László', 'Admin', 'Admin', '2018-10-12', '-');
+
+insert into users (user_uid, user_pwd, user_email, user_firstname, user_lastname, 
+user_position, user_access, user_registered, user_admin_registered) 
+values ('user', 'user', 'admin@gmail.com', 'Dózsa', 'László', 'Administrator', 'User', '2018-10-12', '-');
+
