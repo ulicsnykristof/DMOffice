@@ -5,21 +5,21 @@
 
   A program külön felületet biztosít a felhasználók és az adminok számára. Ezenkívül a felhasználókra további hozzáférési korlátozások vonatkoznak, munkakörüknek megfelelően, mindenki kizárólag a számára releváns funkciókhoz tud hozzáférni.
   
-- Funkciók:
+  Funkciók:
   - Admin:
-  - Userek kezelése +
-  - Userek tevékenysége
-  - Report készítése
+    - Userek kezelése +
+    - Userek tevékenysége
+    - Report készítése
   - User:
-  - Termékek kezelése +
-  - Rendelés feladás +
-  - Rendelés átvétel
-  - Készletnyilvántartás
-  - Leltár
-  - Értékesítés
-  - Áru összekészítés
-  - Kiszállítás
-  - Partnerek kezelése
+    - Termékek kezelése +
+    - Rendelés feladás +
+    - Rendelés átvétel
+    - Készletnyilvántartás
+    - Leltár
+    - Értékesítés
+    - Áru összekészítés
+    - Kiszállítás
+    - Partnerek kezelése
     
 Jelenleg megvalósított funkciók + jellel vannak jelölve.
 
