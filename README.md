@@ -38,7 +38,7 @@ JAR állományok:
   - mysql-connector-java-5.1.47.jar 
   - poi-4.0.1.jar 
   
-## Telepítés
+## Futtatás
 
 - A letöltött projektet nyissuk meg egy IDE-ben, majd adjuk hozzá a JAR fájlokat ( DMOffice/Other/ ).
 - Hozzunk létre egy MySQL adatbázist az alábbi utasításokkal ( DMOffice/Other/sql.txt )
