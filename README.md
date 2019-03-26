@@ -44,8 +44,8 @@ JAR állományok:
 - Hozzunk létre egy MySQL adatbázist az alábbi utasításokkal ( DMOffice/Other/sql.txt )
 - Írjuk át a config file-ban az adatbázis elérési útvonalát az általunk létrehozottéra ( DMOffice/Other/config.txt )
 - Futtassuk a programot
-- Belépeés admin felületre, felhasználónév: Admin jelszó: admin
-- Belépés user ferületre, felhasználónév: bela jelszó: user
+- Belépeés admin felületre, felhasználónév: admin jelszó: admin
+- Belépés user ferületre, felhasználónév: user jelszó: user
 - User felületen, a Products funkióban, az Import gombra kattintva tölthető fel termékekkel az adatbázis
 
 
